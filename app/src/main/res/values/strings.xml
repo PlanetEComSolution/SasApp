@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SasApp</string>
+    <string name="views">Views</string>
+    <string name="share">Share</string>
+    <string name="likes">Likes</string>
+</resources>
