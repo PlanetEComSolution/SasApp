@@ -1,20 +1,18 @@
 package com.test.sasapp.room
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.test.sasapp.model.Posts
 
 @Dao
 interface EventDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insertAll(posts: List<Posts>)
+    @Insert
+    fun insertAll(posts: List<Event>)
 
-    @Query("SELECT * FROM events")
-    fun getEvents():List<Posts>
+    @Query("SELECT * FROM events ORDER BY event_date DESC")
+    fun getEvents(): List<Event>
 
 
 }
