@@ -14,7 +14,7 @@ interface EventDao {
     fun insertAll(posts: List<Posts>)
 
     @Query("SELECT * FROM events")
-    fun getEvents(): LiveData<List<Posts>>
+    fun getEvents():List<Posts>
 
 
 }
