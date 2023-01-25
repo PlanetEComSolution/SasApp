@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import com.riser.allotin.network.ApiInterface
 import com.test.sasapp.base.SasApp
 import com.test.sasapp.model.PostResponse
+import com.test.sasapp.room.EventRepo
 import retrofit2.Call
 import retrofit2.Response
 

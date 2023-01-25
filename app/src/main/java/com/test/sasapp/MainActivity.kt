@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 if (response.posts.isNotEmpty() == true) {
 
                     mList = response.posts
-
+                   eventDatabase.insertAll(mList)
                     binding.recyclerView.layoutManager = LinearLayoutManager(this)
                     adapter = EventAdapter(mList)
                     binding.recyclerView.setHasFixedSize(true)
@@ -66,7 +66,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
+  fun getData(){
+  }
 
 
 }
